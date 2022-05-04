@@ -47,6 +47,10 @@ public class TestBase {
 			System.setProperty("webdriver.gecko.driver", "resources/drivers/firefox/geckodriver.exe");
 			driver = new FirefoxDriver(); 
 		}
+			else if(browserName.equals("phantomjs")){
+			System.setProperty("webdriver.gecko.driver", "resources/drivers/PhantomJS/phantomjs");
+			driver = new FirefoxDriver();
+		}
 		
 		
 		e_driver = new EventFiringWebDriver(driver);
